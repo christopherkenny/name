@@ -1,0 +1,19 @@
+Package: name
+Title: Tools for Working with Names
+Version: 0.0.1
+Authors@R: person("Christopher T.", "Kenny", email = "christopherkenny@fas.harvard.edu",
+                  role = c("aut", "cre"), comment = c(ORCID = "0000-0002-9386-6860"))
+Description: Puts Chris' functions for use with 'rename_with' in one place with tests and documentation.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: 
+    tibble,
+    waldo,
+    dplyr,
+    stringr

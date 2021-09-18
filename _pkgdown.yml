@@ -1,0 +1,20 @@
+template:
+  params:
+    bootswatch: journal
+reference:
+- title: "Prefix"
+  desc: "Functions for adjusting name prefixes"
+- contents:
+  - has_concept("prefix")
+- title: "Suffix"
+  desc: "Functions for adjusting name suffixes"
+- contents:
+  - has_concept("suffix")
+- title: "Phrases"
+  desc: "Functions for adjusting name phrases"
+- contents:
+  - has_concept("phrase")
+- title: "Compare"
+  desc: "Functions for comparing names"
+- contents:
+  - has_concept("compare")
