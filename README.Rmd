@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# name
+# name <img src='man/figures/logo.png' align="right" height="133" />
 
 <!-- badges: start -->
 <!-- badges: end -->
