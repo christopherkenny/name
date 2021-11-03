@@ -3,7 +3,7 @@ Title: Tools for Working with Names
 Version: 0.0.1
 Authors@R: person("Christopher T.", "Kenny", email = "christopherkenny@fas.harvard.edu",
                   role = c("aut", "cre"), comment = c(ORCID = "0000-0002-9386-6860"))
-Description: Puts Chris' functions for use with 'rename_with' in one place with tests and documentation.
+Description: Various functions for use with'dplyr::rename_with'. Aimed at supporting a prefix-based and suffix-based column naming schemes.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -17,5 +17,5 @@ Imports:
     waldo,
     dplyr,
     stringr
-URL: https://github.com/christopherkenny/name
+URL: https://github.com/christopherkenny/name, https://www.christophertkenny.com/name
 BugReports: https://github.com/christopherkenny/name/issues
