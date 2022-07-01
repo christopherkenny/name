@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-Puts my re-used functions for `dplyr::rename_with()` in one place with testing and basic documentation.
+Organizes functions for `dplyr::rename_with()` in one place with testing and basic documentation.
 
 ## Installation
 

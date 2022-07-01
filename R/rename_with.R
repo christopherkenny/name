@@ -12,7 +12,7 @@
 rename_with_loud <- function(.data, .fn, .cols = everything(), ...) {
   old <- names(.data)
 
-  .data <- dplyr::rename_with(.data, .fn, .cols, ...)
+  .data <- dplyr::rename_with(.data, .fn, !!.cols, ...)
 
   new <- names(.data)
 
