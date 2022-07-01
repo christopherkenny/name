@@ -4,12 +4,12 @@
 \alias{rem_pref}
 \title{Remove Prefix}
 \usage{
-rem_pref(pref, x)
+rem_pref(x, pref)
 }
 \arguments{
-\item{pref}{character; prefix to remove}
-
 \item{x}{character; string to change}
+
+\item{pref}{character; prefix to remove}
 }
 \value{
 character
@@ -19,6 +19,6 @@ Remove Prefix
 }
 \examples{
 x <- c('pop', 'pop_2020_est', 'pop_white_2020', 'pop_black_2020')
-rem_pref('pop_', x)
+rem_pref(x, 'pop_')
 }
 \concept{prefix}

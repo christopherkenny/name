@@ -29,7 +29,7 @@ For \code{rename_with()}: additional arguments passed onto \code{.fn}.}
 Rename with, but Loudly
 }
 \examples{
-tb <- tibble(pop = 10, pop_2020_est = 9, pop_white_2020 = 8, pop_black_2020 = 2)
-tb \%>\% rename_with_loud(\(x) rem_suff('_2020', x))
+tb <- tibble::tibble(pop = 10, pop_2020_est = 9, pop_white_2020 = 8, pop_black_2020 = 2)
+rename_with_loud(tb, \(x) rem_suff(x, '_2020'))
 }
 \concept{compare}

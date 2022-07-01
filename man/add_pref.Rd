@@ -4,12 +4,12 @@
 \alias{add_pref}
 \title{Add Prefix}
 \usage{
-add_pref(pref, x)
+add_pref(x, pref)
 }
 \arguments{
-\item{pref}{character; prefix to add}
-
 \item{x}{character; string to change}
+
+\item{pref}{character; prefix to add}
 }
 \value{
 character
@@ -19,6 +19,6 @@ Add Prefix
 }
 \examples{
 x <- c('pop', 'pop_2020_est', 'pop_white_2020', 'pop_black_2020')
-add_pref('census_', x)
+add_pref(x, 'census_')
 }
 \concept{prefix}

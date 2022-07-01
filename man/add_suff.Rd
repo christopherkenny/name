@@ -4,12 +4,12 @@
 \alias{add_suff}
 \title{Add Suffix}
 \usage{
-add_suff(suff, x)
+add_suff(x, suff)
 }
 \arguments{
-\item{suff}{character; suffix to add}
-
 \item{x}{character; string to change}
+
+\item{suff}{character; suffix to add}
 }
 \value{
 character
@@ -19,6 +19,6 @@ Add Suffix
 }
 \examples{
 x <- c('pop', 'pop_2020_est', 'pop_white_2020', 'pop_black_2020')
-add_suff('_cen', x)
+add_suff(x, '_cen')
 }
 \concept{suffix}

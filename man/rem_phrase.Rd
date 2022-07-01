@@ -4,12 +4,12 @@
 \alias{rem_phrase}
 \title{Remove Phrase}
 \usage{
-rem_phrase(phrase, x)
+rem_phrase(x, phrase)
 }
 \arguments{
-\item{phrase}{character; phrase to remove}
-
 \item{x}{character; string to change}
+
+\item{phrase}{character; phrase to remove}
 }
 \value{
 character
@@ -19,6 +19,6 @@ Remove Phrase
 }
 \examples{
 x <- c('pop', 'pop_2020_est', 'pop_white_2020', 'pop_black_2020')
-rem_phrase('_2020', x)
+rem_phrase(x, '_2020')
 }
 \concept{phrase}

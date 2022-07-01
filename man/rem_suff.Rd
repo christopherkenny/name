@@ -4,12 +4,12 @@
 \alias{rem_suff}
 \title{Remove Suffix}
 \usage{
-rem_suff(suff, x)
+rem_suff(x, suff)
 }
 \arguments{
-\item{suff}{character; suffix to remove}
-
 \item{x}{character; string to change}
+
+\item{suff}{character; suffix to remove}
 }
 \value{
 character
@@ -19,6 +19,6 @@ Remove Suffix
 }
 \examples{
 x <- c('pop', 'pop_2020_est', 'pop_white_2020', 'pop_black_2020')
-rem_suff('_2020', x)
+rem_suff(x, '_2020')
 }
 \concept{suffix}

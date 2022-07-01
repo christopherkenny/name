@@ -4,14 +4,14 @@
 \alias{repl_pref}
 \title{Replace Prefix}
 \usage{
-repl_pref(pref, repl, x)
+repl_pref(x, pref, repl)
 }
 \arguments{
+\item{x}{character; string to change}
+
 \item{pref}{character; prefix to replace}
 
 \item{repl}{character; prefix to replace with}
-
-\item{x}{character; string to change}
 }
 \value{
 character
@@ -21,6 +21,6 @@ Replace Prefix
 }
 \examples{
 x <- c('pop', 'pop_2020_est', 'pop_white_2020', 'pop_black_2020')
-repl_pref('pop_', 'p_', x)
+repl_pref(x, 'pop_', 'p_')
 }
 \concept{prefix}

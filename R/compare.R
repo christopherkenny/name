@@ -8,8 +8,8 @@
 #' @export
 #'
 #' @examples
-#' s <- tibble(a = 1, b = 2, d = 3)
-#' t <- tibble(a = 1, d = 3, c = 2)
+#' s <- tibble::tibble(a = 1, b = 2, d = 3)
+#' t <- tibble::tibble(a = 1, d = 3, c = 2)
 #' compare_names(s, t)
 compare_names <- function(x, y) {
   waldo::compare(names(x), names(y),

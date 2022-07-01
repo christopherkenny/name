@@ -4,14 +4,14 @@
 \alias{repl_phrase}
 \title{Replace Phrase}
 \usage{
-repl_phrase(phrase, repl, x)
+repl_phrase(x, phrase, repl)
 }
 \arguments{
+\item{x}{character; string to change}
+
 \item{phrase}{character; phrase to replace}
 
 \item{repl}{character; phrase to replace with}
-
-\item{x}{character; string to change}
 }
 \value{
 character
@@ -21,6 +21,6 @@ Replace Phrase
 }
 \examples{
 x <- c('pop', 'pop_2020_est', 'pop_white_2020', 'pop_black_2020')
-repl_phrase('_2020', '_20', x)
+repl_phrase(x, '_2020', '_20')
 }
 \concept{phrase}

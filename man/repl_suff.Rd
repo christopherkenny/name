@@ -4,14 +4,14 @@
 \alias{repl_suff}
 \title{Replace Suffix}
 \usage{
-repl_suff(suff, repl, x)
+repl_suff(x, suff, repl)
 }
 \arguments{
+\item{x}{character; string to change}
+
 \item{suff}{character; suffix to replace}
 
 \item{repl}{character; suffix to replace with}
-
-\item{name}{character; string to change}
 }
 \value{
 character
@@ -21,6 +21,6 @@ Replace Suffix
 }
 \examples{
 x <- c('pop', 'pop_2020_est', 'pop_white_2020', 'pop_black_2020')
-repl_suff('_2020', '_20', x)
+repl_suff(x, '_2020', '_20')
 }
 \concept{suffix}
