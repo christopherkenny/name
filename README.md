@@ -6,8 +6,8 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-Puts my re-used functions for `dplyr::rename_with()` in one place with
-testing and basic documentation.
+Organizes functions for `dplyr::rename_with()` in one place with testing
+and basic documentation.
 
 ## Installation
 
@@ -45,19 +45,19 @@ We can add a prefix:
 
 ``` r
 mtcars <- mtcars %>% 
-  rename_with(\(x) add_pref('pref_', x))
+  rename_with(\(x) add_pref(x, 'pref_'))
 ```
 
 And similarly a suffix:
 
 ``` r
 mtcars <- mtcars %>% 
-  rename_with(\(x) add_suff('_suff', x))
+  rename_with(\(x) add_suff(x, '_suff'))
 ```
 
 Or a replace a phrase:
 
 ``` r
 mtcars <- mtcars %>% 
-  rename_with(\(x) repl_phrase('_hp', '_hitpoints', x))
+  rename_with(\(x) repl_phrase(x, '_hp', '_hitpoints'))
 ```
