@@ -1,4 +1,6 @@
+url: http://www.christophertkenny.com/name/
 template:
+  bootstrap: 5
   params:
     bootswatch: journal
 reference:

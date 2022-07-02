@@ -17,5 +17,6 @@ Imports:
     waldo,
     dplyr,
     stringr
-URL: https://github.com/christopherkenny/name, https://www.christophertkenny.com/name
+URL: https://github.com/christopherkenny/name,
+    http://www.christophertkenny.com/name/
 BugReports: https://github.com/christopherkenny/name/issues
