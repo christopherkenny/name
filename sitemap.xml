@@ -28,6 +28,21 @@
     <loc>http://www.christophertkenny.com/name/reference/index.html</loc>
   </url>
   <url>
+    <loc>http://www.christophertkenny.com/name/reference/list_phrase.html</loc>
+  </url>
+  <url>
+    <loc>http://www.christophertkenny.com/name/reference/list_pref.html</loc>
+  </url>
+  <url>
+    <loc>http://www.christophertkenny.com/name/reference/list_suff.html</loc>
+  </url>
+  <url>
+    <loc>http://www.christophertkenny.com/name/reference/reexports.html</loc>
+  </url>
+  <url>
+    <loc>http://www.christophertkenny.com/name/reference/relocate_with.html</loc>
+  </url>
+  <url>
     <loc>http://www.christophertkenny.com/name/reference/rem_phrase.html</loc>
   </url>
   <url>
@@ -47,5 +62,17 @@
   </url>
   <url>
     <loc>http://www.christophertkenny.com/name/reference/repl_suff.html</loc>
+  </url>
+  <url>
+    <loc>http://www.christophertkenny.com/name/reference/sd.html</loc>
+  </url>
+  <url>
+    <loc>http://www.christophertkenny.com/name/reference/sort_phrase.html</loc>
+  </url>
+  <url>
+    <loc>http://www.christophertkenny.com/name/reference/sort_pref.html</loc>
+  </url>
+  <url>
+    <loc>http://www.christophertkenny.com/name/reference/sort_suff.html</loc>
   </url>
 </urlset>
