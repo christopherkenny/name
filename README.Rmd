@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 [![R-CMD-check](https://github.com/christopherkenny/name/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/christopherkenny/name/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-Organizes functions for `dplyr::rename_with()` in one place with testing and basic documentation.
+Organizes functions for consistent column naming for `tibble`s and `data.frame`s.
 
 ## Installation
 
