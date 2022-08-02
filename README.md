@@ -4,6 +4,8 @@
 # name <img src='man/figures/logo.png' align="right" height="133" />
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/christopherkenny/name/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/christopherkenny/name/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 Organizes functions for `dplyr::rename_with()` in one place with testing
