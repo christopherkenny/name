@@ -4,6 +4,10 @@ template:
   params:
     bootswatch: journal
 reference:
+- title: "Relocate"
+  desc: "Function to relocate with a function"
+- contents:
+  - relocate_with
 - title: "Prefix"
   desc: "Functions for adjusting name prefixes"
 - contents:
@@ -20,3 +24,11 @@ reference:
   desc: "Functions for comparing names"
 - contents:
   - has_concept("compare")
+- title: "Sorting"
+  desc: "Functions for sorting names"
+- contents:
+  - starts_with("sort")
+- title: "Listing"
+  desc: "Functions for listing components names"
+- contents:
+  - starts_with("list")
