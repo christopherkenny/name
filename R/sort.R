@@ -3,7 +3,7 @@
 #' @param x character; strings to sort
 #'
 #' @return character
-#' @concept prefix
+#' @concept sort
 #' @export
 #' @examples
 #' x <- c('pop', 'pop_2020_est', 'pop_white_2020', 'pop_black_2020')
@@ -19,7 +19,7 @@ sort_pref <- function(x) {
 #' @param loc number of location to sort by. For example `1_2_3_4` with `loc = 3` sorts by 3.
 #'
 #' @return character
-#' @concept prefix
+#' @concept sort
 #' @export
 #' @examples
 #' x <- c('pop_2020_est', 'pop_white_2020', 'pop_black_2020', 'pop_white_2021')
@@ -46,7 +46,7 @@ sort_phrase <- function(x, loc = 2) {
 #' @param x character; strings to sort
 #'
 #' @return character
-#' @concept prefix
+#' @concept sort
 #' @export
 #' @examples
 #' x <- c('pop_2020_est', 'pop_white_2020', 'pop_black_2020', 'pop_white_2021')

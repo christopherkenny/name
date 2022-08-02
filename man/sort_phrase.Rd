@@ -21,4 +21,4 @@ Sort by Phrase
 x <- c('pop_2020_est', 'pop_white_2020', 'pop_black_2020', 'pop_white_2021')
 sort_phrase(x)
 }
-\concept{prefix}
+\concept{sort}

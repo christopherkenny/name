@@ -19,4 +19,4 @@ Sort by Prefix
 x <- c('pop', 'pop_2020_est', 'pop_white_2020', 'pop_black_2020')
 sort_pref(x)
 }
-\concept{prefix}
+\concept{sort}

@@ -19,4 +19,4 @@ List Suffixes
 tb <- tibble::tibble(pop = 10, pop_2020_est = 9, pop_white_2020 = 8, pop_black_2020 = 2)
 list_suff(tb)
 }
-\concept{prefix}
+\concept{list}

@@ -27,11 +27,11 @@ reference:
 - title: "Sorting"
   desc: "Functions for sorting names"
 - contents:
-  - starts_with("sort")
+  - has_concept("sort")
 - title: "Listing"
   desc: "Functions for listing components names"
 - contents:
-  - starts_with("list")
+  - has_concept("list")
 - title: "Data"
   desc: "Example data"
 - contents:

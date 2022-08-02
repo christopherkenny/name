@@ -3,7 +3,7 @@
 #' @param tb tibble; data to list prefixes in
 #'
 #' @return character
-#' @concept prefix
+#' @concept list
 #' @export
 #' @examples
 #' tb <- tibble::tibble(pop = 10, pop_2020_est = 9, pop_white_2020 = 8, pop_black_2020 = 2)
@@ -21,7 +21,7 @@ list_pref <- function(tb) {
 #' @param loc number of location to list. For example `1_2_3_4` with `loc = 3` returns 3.
 #'
 #' @return character
-#' @concept prefix
+#' @concept list
 #' @export
 #' @examples
 #' tb <- tibble::tibble(pop = 10, pop_2020_est = 9, pop_white_2020 = 8, pop_black_2020 = 2)
@@ -37,7 +37,7 @@ list_phrase <- function(tb, loc = 2) {
 #' @param tb tibble; data to list prefixes in
 #'
 #' @return character
-#' @concept prefix
+#' @concept list
 #' @export
 #' @examples
 #' tb <- tibble::tibble(pop = 10, pop_2020_est = 9, pop_white_2020 = 8, pop_black_2020 = 2)
