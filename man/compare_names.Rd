@@ -12,7 +12,7 @@ compare_names(x, y)
 \item{y}{second object}
 }
 \value{
-character vector of differences
+character vector of differences, invisibly
 }
 \description{
 Compare the Names of Two Objects
