@@ -10,8 +10,9 @@
 badge](https://christopherkenny.r-universe.dev/badges/name)](https://christopherkenny.r-universe.dev/name)
 [![Lifecycle:
 stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
-\[![CRAN
-status](https://www.r-pkg.org/badges/version/name)\](<https://CRAN.R-pro>
+[![CRAN
+status](https://www.r-pkg.org/badges/version/name)](https://CRAN.R-project.org/package=name)
+![CRAN downloads](http://cranlogs.r-pkg.org/badges/grand-total/name)
 <!-- badges: end -->
 
 Organizes functions for consistent column naming for `tibble`s and
