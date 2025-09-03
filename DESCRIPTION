@@ -1,7 +1,7 @@
 Package: name
 Title: Tools for Working with Names
-Version: 0.0.1
-Authors@R: person("Christopher T.", "Kenny", email = "christopherkenny@fas.harvard.edu",
+Version: 0.0.2
+Authors@R: person("Christopher T.", "Kenny", email = "ctkenny@proton.me",
                   role = c("aut", "cre"), comment = c(ORCID = "0000-0002-9386-6860"))
 Description: A system for organizing column names in data. Aimed at supporting a 
   prefix-based and suffix-based column naming scheme. Extends 'dplyr' functionality

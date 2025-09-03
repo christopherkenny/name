@@ -6,6 +6,12 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/christopherkenny/name/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/christopherkenny/name/actions/workflows/R-CMD-check.yaml)
+[![name status
+badge](https://christopherkenny.r-universe.dev/badges/name)](https://christopherkenny.r-universe.dev/name)
+[![Lifecycle:
+stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+\[![CRAN
+status](https://www.r-pkg.org/badges/version/name)\](<https://CRAN.R-pro>
 <!-- badges: end -->
 
 Organizes functions for consistent column naming for `tibble`s and
@@ -13,18 +19,17 @@ Organizes functions for consistent column naming for `tibble`s and
 
 ## Installation
 
-<!--
-You can install the released version of name from [CRAN](https://CRAN.R-project.org) with:
+You can install the released version of name from
+[CRAN](https://CRAN.R-project.org) with:
 
 ``` r
-install.packages("name")
+install.packages('name')
 ```
--->
 
 You can install the current version of `name` from GitHub.
 
 ``` r
-devtools::install_github('name')
+pak::pak('christopherkenny/name')
 ```
 
 ## Example
