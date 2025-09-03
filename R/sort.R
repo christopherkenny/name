@@ -52,6 +52,7 @@ sort_phrase <- function(x, loc = 2) {
 #' x <- c('pop_2020_est', 'pop_white_2020', 'pop_black_2020', 'pop_white_2021')
 #' sort_suff(x)
 sort_suff <- function(x) {
+  to_end <- x[!grepl('_', x)]
   pieces <- strsplit(x[grep('_', x)], '_')
   lens <- lengths(pieces)
   suffs <- sapply(seq_along(pieces), FUN = function(i) pieces[[i]][lens[i]])
@@ -62,5 +63,5 @@ sort_suff <- function(x) {
   for (i in seq_along(unique(suff_ord))) {
     new_ord[suff_grp == i] <- seq(grp_ct[i] + 1L, grp_ct[i + 1L])
   }
-  x[match(seq_len(length(x)), new_ord)]
+  c(x[match(seq_len(length(x)), new_ord, nomatch = 0)], to_end)
 }
