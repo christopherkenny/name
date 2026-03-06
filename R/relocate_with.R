@@ -23,7 +23,7 @@ relocate_with.data.frame <- function(.data, .fn, .cols = everything(), .before =
   .fn <- rlang::as_function(.fn)
   cols <- tidyselect::eval_select(rlang::enquo(.cols), .data)
   noms <- .fn(names(.data)[cols], ...)
-  cols <- cols[match(noms, names(.data))]
+  cols <- cols[match(noms, names(.data)[cols])]
 
   if (length(cols) == 0) {
     return(.data)

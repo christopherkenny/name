@@ -15,6 +15,12 @@ compare_names <- function(x, y) {
   nom_x <- names(x)
   nom_y <- names(y)
 
+  if (length(nom_x) != length(nom_y)) {
+    cli::cli_abort(
+      '{.arg x} and {.arg y} must have the same number of names, not {length(nom_x)} and {length(nom_y)}.'
+    )
+  }
+
   v <- which(nom_x != nom_y)
 
   ul <- cli::cli_ul()

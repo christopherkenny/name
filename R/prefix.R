@@ -26,7 +26,7 @@ add_pref <- function(x, pref) {
 #' rem_pref(x, 'pop_')
 rem_pref <- function(x, pref) {
   w <- startsWith(x, pref)
-  x[w] <- stringr::str_remove(x[w], pref)
+  x[w] <- stringr::str_remove(x[w], stringr::fixed(pref))
   x
 }
 
@@ -42,8 +42,8 @@ rem_pref <- function(x, pref) {
 #' @examples
 #' x <- c('pop', 'pop_2020_est', 'pop_white_2020', 'pop_black_2020')
 #' repl_pref(x, 'pop_', 'p_')
-repl_pref <- function(x, pref, repl){
-  w <- stringr::str_starts(x, pref)
-  x[w] <- stringr::str_replace(x[w], pref, repl)
+repl_pref <- function(x, pref, repl) {
+  w <- startsWith(x, pref)
+  x[w] <- stringr::str_replace(x[w], stringr::fixed(pref), repl)
   x
 }

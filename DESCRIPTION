@@ -1,9 +1,13 @@
 Package: name
 Title: Tools for Working with Names
-Version: 0.0.2
-Authors@R: person("Christopher T.", "Kenny", email = "ctkenny@proton.me",
-                  role = c("aut", "cre"), comment = c(ORCID = "0000-0002-9386-6860"))
-Description: A system for organizing column names in data. Aimed at supporting a 
+Version: 0.1.0
+Authors@R:
+    person(given = "Christopher T.",
+           family = "Kenny",
+           role = c("aut", "cre"),
+           email = "ctkenny@proton.me",
+           comment = c(ORCID = "0000-0002-9386-6860"))
+Description: A system for organizing column names in data. Aimed at supporting a
   prefix-based and suffix-based column naming scheme. Extends 'dplyr' functionality
   to add ordering by function and more explicit renaming.
 License: MIT + file LICENSE
@@ -11,10 +15,10 @@ Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
-Suggests: 
+Suggests:
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
-Imports: 
+Imports:
     tibble,
     dplyr,
     stringr,
@@ -24,5 +28,5 @@ Imports:
 URL: https://github.com/christopherkenny/name,
     https://christophertkenny.com/name/
 BugReports: https://github.com/christopherkenny/name/issues
-Depends: 
+Depends:
     R (>= 4.1)

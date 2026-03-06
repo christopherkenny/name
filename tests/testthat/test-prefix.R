@@ -18,3 +18,13 @@ test_that('repl_prefix works', {
   goal <- c('pop', 'p_2020_est', 'p_white_2020', 'p_black_2020')
   expect_identical(test, goal)
 })
+
+test_that('rem_pref treats pref as a literal string, not regex', {
+  x <- c('a.b_x', 'axb_x')
+  expect_equal(rem_pref(x, 'a.b_'), c('x', 'axb_x'))
+})
+
+test_that('repl_pref treats pref as a literal string, not regex', {
+  x <- c('a.b_x', 'axb_x')
+  expect_equal(repl_pref(x, 'a.b_', 'NEW_'), c('NEW_x', 'axb_x'))
+})

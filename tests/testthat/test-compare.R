@@ -1,7 +1,24 @@
-test_that("compare_names works", {
-  s <- tibble(a = 1, b = 2, d = 3)
-  t <- tibble(a = 1, d = 3, c = 2)
-  #test <- compare_names(s, t)
-  #goal <- structure("`s`: \033[90m\"a\"\033[39m \033[32m\"b\"\033[39m \033[32m\"d\"\033[39m\n`t`: \033[90m\"a\"\033[39m \033[32m\"d\"\033[39m \033[32m\"c\"\033[39m", max_diffs = 10, class = "waldo_compare")
-  expect_equal(1L, 1L)
+test_that('compare_names returns named vector of differences', {
+  s <- tibble::tibble(a = 1, b = 2, d = 3)
+  t <- tibble::tibble(a = 1, d = 3, c = 2)
+  result <- compare_names(s, t)
+  expect_equal(result, c(b = 'd', d = 'c'))
+})
+
+test_that('compare_names prints differences', {
+  s <- tibble::tibble(a = 1, b = 2, d = 3)
+  t <- tibble::tibble(a = 1, d = 3, c = 2)
+  expect_snapshot(compare_names(s, t))
+})
+
+test_that('compare_names returns invisible empty vector when identical', {
+  s <- tibble::tibble(a = 1, b = 2)
+  result <- compare_names(s, s)
+  expect_equal(result, setNames(character(0), character(0)))
+})
+
+test_that('compare_names errors on length mismatch', {
+  s <- tibble::tibble(a = 1, b = 2)
+  t <- tibble::tibble(a = 1, b = 2, c = 3)
+  expect_snapshot(compare_names(s, t), error = TRUE)
 })
