@@ -1,0 +1,135 @@
+# name
+
+Organizes functions for consistent column naming for `tibble`s and
+`data.frame`s.
+
+## Installation
+
+You can install the released version of name from
+[CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages('name')
+```
+
+You can install the current version of `name` from GitHub.
+
+``` r
+pak::pak('christopherkenny/name')
+```
+
+## Example
+
+``` r
+library(name)
+library(dplyr)
+#> 
+#> Attaching package: 'dplyr'
+#> The following objects are masked from 'package:stats':
+#> 
+#>     filter, lag
+#> The following objects are masked from 'package:base':
+#> 
+#>     intersect, setdiff, setequal, union
+data(mtcars)
+```
+
+We can add a prefix:
+
+``` r
+mtcars <- mtcars %>% 
+  rename_with(\(x) add_pref(x, 'pref_'))
+```
+
+And similarly a suffix:
+
+``` r
+mtcars <- mtcars %>% 
+  rename_with(\(x) add_suff(x, '_suff'))
+```
+
+Or a replace a phrase:
+
+``` r
+mtcars <- mtcars %>% 
+  rename_with(\(x) repl_phrase(x, '_hp', '_hitpoints'))
+```
+
+# Package index
+
+## Relocate
+
+Function to relocate with a function
+
+- [`relocate_with()`](http://www.christophertkenny.com/name/reference/relocate_with.md)
+  : Relocate columns
+
+## Prefix
+
+Functions for adjusting name prefixes
+
+- [`add_pref()`](http://www.christophertkenny.com/name/reference/add_pref.md)
+  : Add Prefix
+- [`rem_pref()`](http://www.christophertkenny.com/name/reference/rem_pref.md)
+  : Remove Prefix
+- [`repl_pref()`](http://www.christophertkenny.com/name/reference/repl_pref.md)
+  : Replace Prefix
+
+## Suffix
+
+Functions for adjusting name suffixes
+
+- [`add_suff()`](http://www.christophertkenny.com/name/reference/add_suff.md)
+  : Add Suffix
+- [`rem_suff()`](http://www.christophertkenny.com/name/reference/rem_suff.md)
+  : Remove Suffix
+- [`repl_suff()`](http://www.christophertkenny.com/name/reference/repl_suff.md)
+  : Replace Suffix
+
+## Phrases
+
+Functions for adjusting name phrases
+
+- [`rem_phrase()`](http://www.christophertkenny.com/name/reference/rem_phrase.md)
+  : Remove Phrase
+- [`repl_phrase()`](http://www.christophertkenny.com/name/reference/repl_phrase.md)
+  : Replace Phrase
+
+## Compare
+
+Functions for comparing names
+
+- [`compare_names()`](http://www.christophertkenny.com/name/reference/compare_names.md)
+  : Compare the Names of Two Objects
+- [`rename_with_loud()`](http://www.christophertkenny.com/name/reference/rename_with_loud.md)
+  : Rename with, but Loudly
+
+## Sorting
+
+Functions for sorting names
+
+- [`sort_phrase()`](http://www.christophertkenny.com/name/reference/sort_phrase.md)
+  : Sort by Phrase
+- [`sort_pref()`](http://www.christophertkenny.com/name/reference/sort_pref.md)
+  : Sort by Prefix
+- [`sort_suff()`](http://www.christophertkenny.com/name/reference/sort_suff.md)
+  : Sort by Suffix
+
+## Listing
+
+Functions for listing components names
+
+- [`list_phrase()`](http://www.christophertkenny.com/name/reference/list_phrase.md)
+  : List Phrases
+- [`list_pref()`](http://www.christophertkenny.com/name/reference/list_pref.md)
+  : List Prefixes
+- [`list_suff()`](http://www.christophertkenny.com/name/reference/list_suff.md)
+  : List Suffixes
+
+## Data
+
+Example data
+
+- [`sd`](http://www.christophertkenny.com/name/reference/sd.md) : South
+  Dakota Election and Demographic Data
+

@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">name</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.2</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,12 +32,26 @@
     </div>
 
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="0.0.2" id="name-002">name 0.0.2<a class="anchor" aria-label="anchor" href="#name-002"></a></h2>
+<h2 class="pkg-version" data-toc-text="0.1.0" id="name-010">name 0.1.0<a class="anchor" aria-label="anchor" href="#name-010"></a></h2>
+<ul><li>
+<code><a href="../reference/compare_names.html">compare_names()</a></code> now errors informatively when <code>x</code> and <code>y</code> have different numbers of names, rather than silently recycling and producing incorrect output.</li>
+<li>
+<code><a href="../reference/rem_phrase.html">rem_phrase()</a></code> now removes all occurrences of <code>phrase</code> in each string (previously only the first occurrence was removed).</li>
+<li>
+<code><a href="../reference/rem_phrase.html">rem_phrase()</a></code>, <code><a href="../reference/repl_phrase.html">repl_phrase()</a></code>, <code><a href="../reference/rem_pref.html">rem_pref()</a></code>, and <code><a href="../reference/repl_pref.html">repl_pref()</a></code> now treat their pattern arguments as literal strings rather than regular expressions, making them safe to use with column names that contain regex metacharacters (e.g., <code>.</code>).</li>
+<li>
+<code><a href="../reference/relocate_with.html">relocate_with()</a></code> now works correctly when <code>.cols</code> selects a subset of columns (previously errored with a missing value).</li>
+<li>
+<code><a href="../reference/sort_suff.html">sort_suff()</a></code> now correctly handles input that contains a mix of underscore and non-underscore strings (previously produced duplicated and missing elements due to a vector recycling bug).</li>
+</ul></div>
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.0.2" id="name-002">name 0.0.2<a class="anchor" aria-label="anchor" href="#name-002"></a></h2><p class="text-muted">CRAN release: 2025-09-03</p>
 <ul><li>Added a <code>NEWS.md</code> file to track changes to the package.</li>
 <li>Updates readme, logo, and maintainer email.</li>
 <li>Fixes NA in <code><a href="../reference/sort_suff.html">sort_suff()</a></code>.</li>
 </ul></div>
-  </main></div>
+  </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
+    </nav></aside></div>
 
 
     <footer><div class="pkgdown-footer-left">
@@ -45,7 +59,7 @@
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.3.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.0.</p>
 </div>
 
     </footer></div>
