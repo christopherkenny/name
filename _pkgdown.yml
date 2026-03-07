@@ -4,6 +4,10 @@ template:
   params:
     bootswatch: journal
 reference:
+- title: "Clean"
+  desc: "Functions for cleaning names"
+- contents:
+  - has_concept("clean")
 - title: "Relocate"
   desc: "Function to relocate with a function"
 - contents:

@@ -1,5 +1,7 @@
 # name 0.1.0
 
+* `clean_names()` is a new function that renames all columns of a data frame to clean snake_case names, handling camelCase, spaces, dots, dashes, and other special characters. Set `unique = TRUE` to disambiguate duplicate names after cleaning by appending `_1`, `_2`, etc.
+* `str_clean_names()` is a new function that converts a character vector to clean snake_case names with the same transformations as `clean_names()`.
 * `compare_names()` now errors informatively when `x` and `y` have different numbers of names, rather than silently recycling and producing incorrect output.
 * `rem_phrase()` now removes all occurrences of `phrase` in each string (previously only the first occurrence was removed).
 * `rem_phrase()`, `repl_phrase()`, `rem_pref()`, and `repl_pref()` now treat their pattern arguments as literal strings rather than regular expressions, making them safe to use with column names that contain regex metacharacters (e.g., `.`).
