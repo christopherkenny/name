@@ -57,6 +57,15 @@ mtcars <- mtcars %>%
 
 # Package index
 
+## Clean
+
+Functions for cleaning names
+
+- [`clean_names()`](http://www.christophertkenny.com/name/reference/clean_names.md)
+  : Clean data frame column names
+- [`str_clean_names()`](http://www.christophertkenny.com/name/reference/str_clean_names.md)
+  : Clean a character vector of names
+
 ## Relocate
 
 Function to relocate with a function

@@ -34,6 +34,10 @@
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.1.0" id="name-010">name 0.1.0<a class="anchor" aria-label="anchor" href="#name-010"></a></h2>
 <ul><li>
+<code><a href="../reference/clean_names.html">clean_names()</a></code> is a new function that renames all columns of a data frame to clean snake_case names, handling camelCase, spaces, dots, dashes, and other special characters. Set <code>unique = TRUE</code> to disambiguate duplicate names after cleaning by appending <code>_1</code>, <code>_2</code>, etc.</li>
+<li>
+<code><a href="../reference/str_clean_names.html">str_clean_names()</a></code> is a new function that converts a character vector to clean snake_case names with the same transformations as <code><a href="../reference/clean_names.html">clean_names()</a></code>.</li>
+<li>
 <code><a href="../reference/compare_names.html">compare_names()</a></code> now errors informatively when <code>x</code> and <code>y</code> have different numbers of names, rather than silently recycling and producing incorrect output.</li>
 <li>
 <code><a href="../reference/rem_phrase.html">rem_phrase()</a></code> now removes all occurrences of <code>phrase</code> in each string (previously only the first occurrence was removed).</li>

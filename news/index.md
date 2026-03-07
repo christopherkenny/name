@@ -2,6 +2,15 @@
 
 ## name 0.1.0
 
+- [`clean_names()`](http://www.christophertkenny.com/name/reference/clean_names.md)
+  is a new function that renames all columns of a data frame to clean
+  snake_case names, handling camelCase, spaces, dots, dashes, and other
+  special characters. Set `unique = TRUE` to disambiguate duplicate
+  names after cleaning by appending `_1`, `_2`, etc.
+- [`str_clean_names()`](http://www.christophertkenny.com/name/reference/str_clean_names.md)
+  is a new function that converts a character vector to clean snake_case
+  names with the same transformations as
+  [`clean_names()`](http://www.christophertkenny.com/name/reference/clean_names.md).
 - [`compare_names()`](http://www.christophertkenny.com/name/reference/compare_names.md)
   now errors informatively when `x` and `y` have different numbers of
   names, rather than silently recycling and producing incorrect output.
