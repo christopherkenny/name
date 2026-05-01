@@ -9,18 +9,21 @@ You can install the released version of name from
 [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
+
 install.packages('name')
 ```
 
 You can install the current version of `name` from GitHub.
 
 ``` r
+
 pak::pak('christopherkenny/name')
 ```
 
 ## Example
 
 ``` r
+
 library(name)
 library(dplyr)
 #> 
@@ -37,6 +40,7 @@ data(mtcars)
 We can add a prefix:
 
 ``` r
+
 mtcars <- mtcars %>% 
   rename_with(\(x) add_pref(x, 'pref_'))
 ```
@@ -44,6 +48,7 @@ mtcars <- mtcars %>%
 And similarly a suffix:
 
 ``` r
+
 mtcars <- mtcars %>% 
   rename_with(\(x) add_suff(x, '_suff'))
 ```
@@ -51,6 +56,7 @@ mtcars <- mtcars %>%
 Or a replace a phrase:
 
 ``` r
+
 mtcars <- mtcars %>% 
   rename_with(\(x) repl_phrase(x, '_hp', '_hitpoints'))
 ```
